@@ -49,7 +49,8 @@ html {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
   padding: 0 3rem;
   margin-right: auto;
 }
