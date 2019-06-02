@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* landing img styles */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('./assets/images/heroimg.jpg');
@@ -36,6 +37,7 @@ html {
   margin: 0;
 }
 
+/* local weather card */
 .header-local-weather {
   display: flex;
 }
@@ -59,6 +61,7 @@ html {
   cursor: pointer;
 }
 
+/* slider component global styles */
 #citySlider {
   background-color: #71c5e7;
   height: 50vh;
@@ -83,6 +86,7 @@ html {
   display: none;
 }
 
+/* city weather cards */
 .card {
   border-radius: 2rem;
   margin: 0.5rem;
@@ -143,6 +147,7 @@ html {
   font-size: 1rem;
 }
 
+/* slider arrows */
 .arrow {
   border-color: #000;
   background-color: rgba(0, 0, 0, 0.425);
@@ -164,6 +169,7 @@ html {
   left: 0;
 }
 
+/* city details global styles */
 #cityDetails {
   min-height: 50vh;
   background-color: #87ceeb;
@@ -176,6 +182,7 @@ html {
   flex-direction: column;
 }
 
+/* city details component styles */
 .details-container {
   display: flex;
   flex-direction: column;
@@ -212,6 +219,7 @@ html {
   margin: 0;
 }
 
+/* city selector style */
 .city-select {
   padding: 0.5rem 0.5rem;
   margin: 1rem 1rem;

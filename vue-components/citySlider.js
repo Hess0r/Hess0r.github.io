@@ -62,6 +62,7 @@ const citySlider = new Vue({
     }
   },
   methods: {
+    //smooth horizontal slide
     slide: function(direction) {
       if (direction == 'left') {
         let scrollAmount = 0;

@@ -1,3 +1,4 @@
+//city select template
 Vue.component('city-select', {
   props: ['cities'],
   template: `
@@ -31,6 +32,7 @@ Vue.component('city-details', {
       `
 });
 
+//details component
 const cityDetails = new Vue({
   el: '#cityDetails',
   data: {

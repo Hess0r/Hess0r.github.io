@@ -46,6 +46,7 @@ const header = new Vue({
       this.localWeather = await axios.get(url);
     }
   },
+  //local weather api call
   mounted: function() {
     this.getLocation();
   }
