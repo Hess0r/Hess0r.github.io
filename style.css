@@ -51,6 +51,7 @@ html {
   flex-wrap: nowrap;
   overflow-x: auto;
   padding: 0 3rem;
+  margin-right: auto;
 }
 
 .slider-container::-webkit-scrollbar {
