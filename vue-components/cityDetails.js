@@ -1,3 +1,12 @@
+Vue.component('city-select', {
+  props: ['cities'],
+  template: `
+      <select class="city-select" @change="cityDetails.selectCity()" v-model="cityDetails.city">
+        <option v-for="city in cities" v-bind:value="city">{{city.name}}</option>
+      </select>
+  `
+});
+
 // city details template
 Vue.component('city-details', {
   props: ['city'],
@@ -5,7 +14,7 @@ Vue.component('city-details', {
         <div class="details-container">
           <div class="details-top-row">
             <div class="details-row">
-              <div class="details-description">{{city.weather[0].description}}</div>
+              <div class="details-description">{{city.weather[0].description ? city.weather[0].description : city.weather.description}}</div>
               <div class="details-temp">{{city.main.temp}}</div>
               <p class="unit">°C</p>
             </div>
@@ -27,5 +36,10 @@ const cityDetails = new Vue({
   data: {
     visible: false,
     city: ''
+  },
+  methods: {
+    selectCity: function() {
+      citySlider.setCity(this.city);
+    }
   }
 });

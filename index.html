@@ -35,6 +35,11 @@
       ></arrow-key>
     </div>
     <div id="cityDetails">
+      <city-select
+        v-if="visible"
+        v-bind:cities="citySlider._data.citysInfo"
+        v-on:select-city="console.log($event)"
+      ></city-select>
       <city-details v-if="visible" v-bind:city="city"></city-details>
     </div>
     <script src="./vue-components/citySlider.js"></script>

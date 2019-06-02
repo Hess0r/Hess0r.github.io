@@ -51,7 +51,7 @@ html {
 
 .header-local-weather-city,
 .header-local-weather-temp {
-  cursor: pointer;
+  cursor: default;
 }
 
 .header-local-weather-city {
@@ -90,6 +90,7 @@ html {
   min-width: 20vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -164,21 +165,26 @@ html {
 }
 
 #cityDetails {
-  height: 50vh;
+  min-height: 50vh;
   background-color: #87ceeb;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('./assets/images/heroimg2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .details-container {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+}
+
+.details-container > h2 {
+  margin-bottom: 0;
 }
 
 .details-row,
@@ -190,7 +196,7 @@ html {
 
 .details-top-row {
   display: flex;
-  margin-bottom: auto;
+  margin-bottom: 2rem;
 }
 
 .details-row > span {
@@ -204,4 +210,13 @@ html {
 .unit {
   font-size: 3rem;
   margin: 0;
+}
+
+.city-select {
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 10vw;
 }
